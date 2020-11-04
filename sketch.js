@@ -26,6 +26,7 @@ function setup() {
 	dustbin2 = new Dustbin(600,670,100,10);
 	dustbin3 = new Dustbin(560,670,10,100);
 	paper1 = new  Paper();
+	paper1.scale = 0.05;
 	// paper1.velocityY = 8
 	Engine.run(engine);
   
@@ -34,8 +35,8 @@ function setup() {
 
 function draw() {
   rectMode(CENTER);
-  background(0);
-  dustbin1.display();
+  background("red");
+ dustbin1.display();
   ground.display();
   dustbin2.display();
   dustbin3.display();
